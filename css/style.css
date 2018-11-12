@@ -16,12 +16,6 @@ div.social a :hover {
   opacity: 1;
 }
 
-@media (max-width: 900px) {
-  h1 {
-    display: none;
-  }
-}
-
 header {
   width: 100%;
   height: 50px;
@@ -54,5 +48,21 @@ header ul li {
 header div.social i {
   margin-right: 5px;
   opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  header div.social i {
+    margin-right: 1px;
+  }
+  header a {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
