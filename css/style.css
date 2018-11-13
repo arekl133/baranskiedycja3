@@ -50,6 +50,55 @@ header div.social i {
   opacity: 0.5;
 }
 
+header div.responsive-menu {
+  display: none;
+}
+
+header div.responsive-menu div.menu {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header div.responsive-menu div.menu button {
+  padding: 2px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+header div.responsive-menu div.menu ol li {
+  font-family: 'Open Sans', sans-serif;
+  margin-right: 15px;
+  font-size: 100%;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 450px) {
+  header {
+    height: auto;
+  }
+  header ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: none;
+  }
+  header ul li {
+    display: block;
+  }
+  header div.responsive-menu {
+    display: unset;
+  }
+  header div.social i {
+    font-size: 25px;
+  }
+}
+
 @media (max-width: 768px) {
   header div.social i {
     margin-right: 1px;

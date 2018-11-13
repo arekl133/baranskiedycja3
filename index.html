@@ -19,6 +19,7 @@
     <header>
         <h1>ImieNazwisko</h1>
 
+
         <ul>
             <li><a href="">O FIRMIE</a></li>
             <li><a href="">ZAKRES PRAC</a></li>
@@ -48,6 +49,28 @@
                 <i class="fab fa-github-square"></i>
             </a>
         </div>
+        <div class="responsive-menu">
+            <div class="menu">
+                <button>Menu</button>
+                <ol>
+                    <li><a href="">O FIRMIE</a></li>
+                    <li><a href="">ZAKRES PRAC</a></li>
+                    <li><a href="">GALERIA</a></li>
+                    <li><a href="">KONTAKT</a></li>
+                </ol>
+
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $(".menu").click(function () {
+                        $("ol").slideToggle(500);
+                    })
+                })
+            </script>
+        </div>
+
     </header>
 </body>
 
